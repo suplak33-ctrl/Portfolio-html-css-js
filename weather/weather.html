@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Minimal Weather</title>
+<link rel="stylesheet" href="weather.css" />
+</head>
+<body>
+<main class="wrap">
+<header class="header">
+<h1 class="title">Minimal Weather</h1>
+<form id="searchForm" class="search">
+<input id="cityInput" class="input" type="text" placeholder="Search city (e.g., Kathmandu)" />
+<button class="btn" type="submit">Search</button>
+</form>
+</header>
+
+<section class="grid" id="cardsContainer" aria-live="polite">
+<!-- Cards injected here -->
+</section>
+
+<footer class="footer">
+<small>Data from OpenWeatherMap</small>
+</footer>
+</main>
+
+<script src="weather.js" defer></script>
+</body>
+</html>

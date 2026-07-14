@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon </title>
+  <link rel="stylesheet" href="timer.css">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="timer.js" defer></script>
+</head>
+<body>
+ 
+
+  <main class="container">
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <span>Sherps Timer</span>
+    </div>
+
+    <section class="hero">
+
+        <div class="badge">
+            <span class="pulse"></span>
+            Productivity Timer
+        </div>
+
+        <h1>Stay Focused.</h1>
+
+        <p>
+           Keep away all your distractions and stay locked in for time period
+        </p>
+
+    </section>
+
+    <section class="timer-card">
+
+        <div class="progress-ring">
+
+            <svg width="260" height="260">
+
+                <circle
+                    class="bg-circle"
+                    cx="130"
+                    cy="130"
+                    r="110"/>
+
+                <circle
+                    class="progress-circle"
+                    id="progressCircle"
+                    cx="130"
+                    cy="130"
+                    r="110"/>
+
+            </svg>
+
+            <div class="timer">
+
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="controls">
+
+        <button id="startBtn">
+            <i class="fa-solid fa-play"></i>
+            Start
+        </button>
+
+        <button id="pauseBtn">
+            <i class="fa-solid fa-pause"></i>
+            Pause
+        </button>
+
+        <button id="resetBtn">
+            <i class="fa-solid fa-rotate-left"></i>
+            Reset
+        </button>
+
+    </section>
+
+    <section class="custom-time">
+
+        <div class="input-group">
+            <i class="fa-solid fa-clock"></i>
+
+            <input
+                type="number"
+                id="customMinutes"
+                min="1"
+                max="180"
+                placeholder="Minutes">
+
+        </div>
+
+        <button id="setBtn">
+
+            Set Timer
+
+        </button>
+
+    </section>
+
+</main>
+  
+
+
+ <script src="timer.js"></script>
+</body>
+</html>

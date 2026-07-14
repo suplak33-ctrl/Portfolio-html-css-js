@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guess.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="card" role="application" aria-label="Number guesser game">
+    <div class="panel" id="gamePanel">
+      <div class="heading">
+        <div class="logo" aria-hidden="true">NG</div>
+        <div>
+          <h1>Number Guesser</h1>
+          <p class="lead">Guess a secret number between 1 and 100. Smart hints and friendly microinteractions.</p>
+        </div>
+      </div>
+
+      <div class="meter" aria-hidden="true">
+        <div class="range" aria-hidden="true"><div class="bar" id="progressBar"></div></div>
+        <div class="stat" id="triesText">Tries: 0</div>
+      </div>
+
+      <div class="controls" aria-live="polite">
+        <input id="guessInput" type="number" min="1" max="100" placeholder="Enter your guess" />
+        <button id="guessBtn">Guess</button>
+        <button class="ghost" id="hintBtn" title="Get a hint (costs a try)">Hint</button>
+        <button class="ghost" id="resetBtn" title="Start a new game">Reset</button>
+      </div>
+
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="msg">
+          <div class="bubble" id="messageBubble">Welcome — enter your name on the right to begin.</div>
+        </div>
+      </div>
+
+      <div style="position:relative;min-height:40px;">
+        <!-- confetti container -->
+        <div id="confettiRoot" style="position:absolute;inset:0;pointer-events:none;"></div>
+      </div>
+    </div>
+
+    <aside class="side" aria-label="Player info">
+      <div class="userinfo">
+        <div class="avatar" id="avatar">?</div>
+        <div style="flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div id="displayName" style="font-weight:700">Guest</div>
+              <div class="small" id="displayUsername">@guest5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label class="small">Full name</label>
+        <input id="nameInput" type="text" placeholder="Enter full name (e.g., Sup Lak)" />
+      </div>
+
+      <div class="list">
+        <div class="item"><div class="small">Game range</div><div>1 — 100</div></div>
+        <div class="item"><div class="small">Secret number</div><div id="secretMask">•••</div></div>
+        <div class="item"><div class="small">Attempts</div><div id="triesCount">0</div></div>
+        <div class="item"><div class="small">Best (session)</div><div id="bestScore">—</div></div>
+      </div>
+
+      <div class="hint">Tip: Use the Hint button to learn if the number is even/odd (costs 1 try).</div>
+    </aside>
+  </div>
+  <script src="guess.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngima Gyalje Sherpa — Front-end Developer</title>
+  <link rel="stylesheet" href="new.css" />
+  <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700|Instrument+Serif:regular,italic" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/e82c1ef0ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- floating cursor blur blob -->
+  <div class="cursor-blur" id="cursorBlur"></div>
+
+  <div class="container">
+
+    <!-- ============ HERO ============ -->
+    <header>
+      <nav>
+        <div class="ava">
+          <div class="circle"></div>
+          Available for New Project
+        </div>
+
+        <div>
+          <ul id="menulist">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-icon">
+          <i id="icon" class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <div class="hero-grain"></div>
+
+      <div class="bigname">
+        <span class="bignameone">Front-end</span>
+        <div class="bignametwo">Developer <em class="wave">👋</em></div>
+      </div>
+
+      <div class="bigmidpara">
+        <div class="midpara">
+          <div class="profile">
+            <span class="pill">Ngima Gyalje Sherpa</span>
+           
+            <p>
+              Hi, I'm Ngima.I build quality front-end interfaces that prioritize user experience, with great attention to detail.
+
+
+            </p>
+            <p class="big ">18years old </p>
+            <h5><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</h5>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn-primary">See my work <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#contact" class="btn-ghost">Get in touch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nims">
+          <div class="photo-frame">
+            <img class="nima" src="IMG-20260706-WA0000-removebg-preview.png" alt="Ngima" />
+            <div class="photo-tape tape-tl"></div>
+            <div class="photo-tape tape-br"></div>
+          </div>
+        </div>
+      </div>
+
+     
+
+    <div class="seccontainer">
+
+      <!-- ============ SKILLS ============ -->
+      <section class="skills-section" id="skills">
+        <div class="section-head">
+          <h2 class="section-title">Technologies</h2>
+        </div>
+
+        <div class="skills-row">
+          <div class="skill-card">
+            <h3>Front End</h3>
+            <div class="logo-list">
+              <div class="logo-item"><i class="fa-brands fa-html5" style="color:#ed7529"></i><span>HTML</span></div>
+              <div class="logo-item"><i class="fa-brands fa-css3-alt" style="color:#1d6dac"></i><span>CSS</span></div>
+              <div class="logo-item"><i class="fa-brands fa-react" style="color:#74c0fc"></i><span>React</span></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Back End</h3>
+            <div class="logo-list">
+              <div class="logo-item"><i class="fa-brands fa-js" style="color:#ffd43b"></i><span>JavaScript</span></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="logo-list">
+              <div class="logo-item"><i class="fa-brands fa-github" style="color:#a2a7b2"></i><span>Git</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="projects-section" id="projects">
+        <div class="projects-container">
+          <div class="projects-header">
+            <h2>Latest Projects</h2>
+            <p>Explore my recent work, experiments, and fun builds.</p>
+            <a href="https://github.com/suplak33-ctrl" target="_blank" class="github-btn">
+              <i class="fa-brands fa-github"></i> Visit My GitHub
+            </a>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <a href="../restaurant/res.html" class="card-link" aria-label="Portfolio Website"></a>
+              <div class="project-photo" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6aedwOx-WHm0_X59Ps3-MuvKS_68xtRRdGe8wyEAtQ&s=10');"></div>
+              <div class="project-info">
+                <span class="project-field">Html/Css</span>
+                <h3>Restaurant Website</h3>
+                <p class="project-use">Used for personal branding and showing my work.</p>
+                <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="../trek/trek.html" class="card-link"></a>
+              <div class="project-photo" 
+              style="background-image:url('Screenshot 2026-07-08 08.55.29.png');"
+              ></div>
+              <div class="project-info">
+                <span class="project-field">UI Design</span>
+                <h3>Trekking and travels e</h3>
+                <p class="project-use">Used for a modern travel or adventure servies.</p>
+                <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="../onmain/main.html" class="card-link"></a>
+              <div class="project-photo"></div>
+              <div class="project-info">
+                <span class="project-field">React</span>
+                <h3>Dashboard UI</h3>
+                <p class="project-use">Used for displaying data in a clean interactive way.</p>
+                <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="../ecommerce/ecc.html" class="card-link"></a>
+              <div class="project-photo" 
+              style="background-image:url('Screenshot 2026-07-12 11.46.01.png');"
+              ></div>
+        
+
+           
+              <div class="project-info">
+                <span class="project-field">E-Commerce</span>
+                <h3>Product Store</h3>
+                <p class="project-use">Used for online shopping and product display.</p>
+                <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="../onmain/main.html" class="card-link"></a>
+              <div class="project-photo"></div>
+              <div class="project-info">
+                <span class="project-field">JavaScript</span>
+                <h3>CRUD App</h3>
+                <p class="project-use">Used for managing, editing, and deleting records.</p>
+                <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="../onmain/main.html" class="card-link"></a>
+              <div class="project-photo"></div>
+              <div class="project-info">
+                <span class="project-field">Responsive</span>
+                <h3>Business Site</h3>
+                <p class="project-use">Used for a professional mobile-friendly web presence.</p>
+                <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GAMES ============ -->
+      <section class="games-section" id="games">
+        <div class="projects-container">
+          <div class="projects-header">
+            <h2>Projects I Built for Fun</h2>
+            <p>Small interactive and playful projects created during practice.</p>
+          </div>
+
+          <div class="games-grid">
+            <article href="new.css" class="game-card">
+              <div class="game-emoji"><i class="fa-solid fa-question" style="color: rgb(248, 243, 233);"></i></div>
+              <a href="../guess/guess.html" ></a>
+              <h3>Guess the Number</h3>
+              <p>A simple game to practice logic and interactions.</p>
+            </article>
+
+            <article class="game-card">
+              <div class="game-emoji"><i class="fa-solid fa-clock" style="color: rgb(210, 204, 227);"></i></div>
+              <a href="../timer/timer.html" class="card-link"></a>
+
+              <h3>Productivity Timer</h3>
+              <p>A classic timer made for improving self-attention span and JavaScript practice.</p>
+            </article>
+
+            <article class="game-card">
+              <div class="game-emoji">🧠</div>
+              <a href="../quiz/quiz.html" class="card-link"></a>
+
+              <h3>Quiz Game</h3>
+              <p>A colorful game to test your brain </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="contact-intro">
+            <h2>Excited to witness design expertise at work?</h2>
+            <p>Let's collaborate together </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-message">
+              <h3>Write Me a Message</h3>
+              <p>Share your ideas, project goals, or questions below.</p>
+              <form class="contact-form">
+                <div class="input-group">
+                  <input type="text" name="username" placeholder="Your username" required />
+                </div>
+                <div class="input-group">
+                  <input type="email" name="email" placeholder="Your email" required />
+                </div>
+                <div class="input-group">
+                  <textarea name="message" placeholder="Write your message..." rows="6" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+
+            <div class="contact-social">
+              <h3>Find Me On</h3>
+              <p>Connect with me on my social platforms.</p>
+              <ul class="social-links">
+                <li><a class="linkedin" href="https://www.linkedin.com/in/ngdark-boy-b0377436a/"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a></li>
+                <li><a class="insta" href="https://www.instagram.com/ngimagyalje/"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a></li>
+                <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i> <span>Twitter / X</span></a></li>
+                <li><a href="https://github.com/suplak33-ctrl" ><i class="fa-brands fa-github"></i> <span>GitHub</span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="tiny-foot">
+            <span>© <span id="year"></span> Ngima Gyalje Sherpa</span>
+            <span>Made by hand in Kathmandu.</span>
+          </footer>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- scroll controls -->
+  <div class="scroll-dock">
+    <button class="scroll-btn" id="scrollTopBtn" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <button class="scroll-btn" id="scrollBottomBtn" aria-label="Scroll to bottom">
+      <i class="fa-solid fa-arrow-down"></i>
+    </button>
+  </div>
+
+  <script src="new.js"></script>
+</body>
+</html>
